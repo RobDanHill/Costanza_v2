@@ -1,0 +1,34 @@
+# Build-logs #
+*.tlog
+*.tlog/
+*.log
+
+# Build-states #
+*.idb
+
+# Build-helpers #
+*.lastbuildstate
+*.obj
+*.ipch
+
+# Build-result #
+*.ilk
+*.pdb
+*.exe
+
+# Solution user options #
+*.suo
+
+# Debug settings #
+*.user
+
+# Intellisense #
+*.sdf
+
+# More Visual C++ cache files #
+ipch/
+# Visual Studio 2015 update 1 stuff #
+*.opendb
+*.opensdf
+
+*.aps
