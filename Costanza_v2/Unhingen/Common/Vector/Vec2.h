@@ -1,6 +1,14 @@
 #pragma once
 
+#ifdef __linux__
+
+#include "../Types.h"
+
+#else
+
 #include "..\Types.h"
+
+#endif
 
 typedef struct Vec2_s {
 

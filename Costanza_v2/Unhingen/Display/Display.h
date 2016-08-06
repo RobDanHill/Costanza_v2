@@ -9,7 +9,7 @@
 #else
 
 #include <SDL2\SDL.h>
-#include "..\Unhingen\Commin\Types.h"
+#include "..\Unhingen\Common\Types.h"
 
 #endif
 
@@ -25,12 +25,17 @@ class Display {
         SDL_Window  *window;
         SDL_Surface *surface;
 
-    public:
-        Display (String title,
-                int SDL_WINDOWPOS_X,
-                int SDL_WINDOWPOS_Y,
-                int WINDOW_WIDTH,
-                int WINDOW_HEIGHT) {
+        u_short WINDOW_WIDTH;
+        u_short WINDOW_HEIGHT;
 
-        }
+    public:
+        /**
+         * Constructor
+         */
+        Display (String title, u_short WINDOW_WIDTH, u_short WINDOW_HEIGHT);
+
+        InitWindow();
+
+        ~Display();
+
 }

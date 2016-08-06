@@ -1,6 +1,15 @@
 #pragma once
 
+#ifdef __linux__
+
+#include "../Common/Types.h"
+
+#else
+
 #include "..\Common\Types.h"
+
+#endif
+
 #include <string>
 
 class CommandLine {

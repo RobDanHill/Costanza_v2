@@ -1,11 +1,23 @@
 #include <iostream>
 #include <stdio.h>
 
+#ifdef __linux__
+
+#include <SDL2/SDL.h>
+
+#include "../Unhingen/Common/Types.h"
+#include "../Unhingen/Common/Vector/Vec2.h"
+#include "../Unhingen/System/CommandLine.h"
+
+#else
+
 #include <SDL2\SDL.h>
 
 #include "..\Unhingen\Common\Types.h"
 #include "..\Unhingen\Common\Vector\Vec2.h"
 #include "..\Unhingen\System\CommandLine.h"
+
+#endif
 
 const u_short WINDOW_WIDTH = 800;
 const u_short WINDOW_HEIGHT = 600;
@@ -15,11 +27,11 @@ s_int main ( s_int argc, char *argv[] ) {
 	/* For now, the main function is more of a test ground
 	   for the engine... */
 
-	CommandLine *com = new CommandLine( ( u_byte ) argc, ( const char** ) argv );
+	/*CommandLine *com = new CommandLine( ( u_byte ) argc, ( const char** ) argv );
 	com->PrintTokens();
 
 	Vec2 v1( 10, 10 );
-	Vec2 v2( 20 );
+	Vec2 v2( 20 );*/
 
 	SDL_Window *window = null;
 	SDL_Surface *surface = null;
@@ -27,7 +39,7 @@ s_int main ( s_int argc, char *argv[] ) {
 	//printf( "v.x = %d\nv.y = %d\n", v1.x, v1.y );
 
 	//Vec2 v = v1 / v2;
-	v1 += v2;
+	//v1 += v2;
 
 	//printf( "v1 += v2\nv1.x = %d\nv1.y = %d\n", v1.x, v1.y );
 
@@ -57,7 +69,7 @@ s_int main ( s_int argc, char *argv[] ) {
 
 	SDL_DestroyWindow( window );
 	SDL_Quit();
-	delete com;
+	//delete com;
 	system( "PAUSE" );
 	return 0;
 }
