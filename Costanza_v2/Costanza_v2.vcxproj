@@ -151,10 +151,14 @@
     <ClCompile Include="Washington\MainComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Unhingen\2D\2D.h" />
+    <ClInclude Include="Unhingen\3D\3D.h" />
     <ClInclude Include="Unhingen\Common\Types.h" />
     <ClInclude Include="Unhingen\Common\Vector\Vec2.h" />
     <ClInclude Include="Unhingen\Common\Vector\Vec2f.h" />
+    <ClInclude Include="Unhingen\Display\Display.h" />
     <ClInclude Include="Unhingen\System\CommandLine.h" />
+    <ClInclude Include="Unhingen\Utils\Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -41,5 +41,17 @@
     <ClInclude Include="Unhingen\System\CommandLine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Unhingen\2D\2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unhingen\3D\3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unhingen\Display\Display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unhingen\Utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
