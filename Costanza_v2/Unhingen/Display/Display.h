@@ -4,14 +4,16 @@
 #ifdef __linux__
 
 #include <SDL2/SDL.h>
-#include "../Unhingen/Common/Types.h"
+#include "../Common/Types.h"
 
 #else
 
 #include <SDL2\SDL.h>
-#include "..\Unhingen\Common\Types.h"
+#include "..\Common\Types.h"
 
 #endif
+
+#include <string>
 
 /* *
  * Display attempts to provide an abstracted interface to SDL2 and OpenGL
@@ -21,9 +23,10 @@
  * */
 
 class Display {
+
     private:
-        SDL_Window  *window;
-        SDL_Surface *surface;
+        SDL_Window  *window  = null;
+        SDL_Surface *surface = null;
 
         u_short WINDOW_WIDTH;
         u_short WINDOW_HEIGHT;
@@ -32,10 +35,16 @@ class Display {
         /**
          * Constructor
          */
-        Display (String title, u_short WINDOW_WIDTH, u_short WINDOW_HEIGHT);
+        Display ();
 
-        InitWindow();
+        void InitWindow(u_short WINDOW_WIDTH, u_short WINDOW_HEIGHT);
+
+        void InitSurface();
+
+        SDL_Window* GetWindow();
+
+        SDL_Surface* GetSurface();
 
         ~Display();
 
-}
+};
