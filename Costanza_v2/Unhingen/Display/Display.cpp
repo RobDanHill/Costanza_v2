@@ -6,7 +6,7 @@ Display::Display () {
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 ) {
         // we should probably handle this with an exception not a string.
         //printf( "SDL did not initialize! SDL Error: %s\n", SDL_GetError() );
-        throw SDL_GetError();
+        //throw SDL_GetError();
     }
 
 }
@@ -32,7 +32,7 @@ void Display::InitWindow (u_short WINDOW_WIDTH, u_short WINDOW_HEIGHT) {
     if ( this->window == null ) {
         // should also handle this with an exception.
         //printf( "The window was not initialized! SDL Error: %s\n", SDL_GetError() );
-        throw SDL_GetError();
+        //throw SDL_GetError();
     }
     
 }
