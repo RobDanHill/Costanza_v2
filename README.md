@@ -6,5 +6,5 @@
 - Since the engine is just a collection of helpful pieces of code, it makes sense to use it like a library.
 - The MainComponent.cpp is just a simple testbed of sorts.
 1. Install deps (assuming Ubuntu/debian) `sudo apt-get install libsdl2-dev libglew-dev libglm-dev`
-2. Build the test bed `g++ Costanza_v2/Washington/MainComponent.cpp Costanza_v2/Unhingen/System/* Costanza_v2/Unhingen/Common/Vec2.* -lSDL2 -lGLEW -o Wash`
+2. Build the test bed `g++ Costanza_v2/Washington/MainComponent.cpp Costanza_v2/Unhingen/System/* Costanza_v2/Unhingen/Common/Vector/Vec2.* Costanza_v2/Unhingen/Display/Display.* -lSDL2 -lGLEW -o Wash`
 3. Then run the test bed with `./Wash`
