@@ -27,6 +27,9 @@
     <ClCompile Include="Unhingen\System\CommandLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Unhingen\Display\Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Unhingen\Common\Types.h">
