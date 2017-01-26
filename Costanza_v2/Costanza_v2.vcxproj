@@ -94,7 +94,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>.\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;SDL2_image.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -145,8 +145,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Unhingen\Common\Vector\Vec2.cpp" />
-    <ClCompile Include="Unhingen\Common\Vector\Vec2f.cpp" />
     <ClCompile Include="Unhingen\System\CommandLine.cpp" />
     <ClCompile Include="Washington\MainComponent.cpp" />
   </ItemGroup>
@@ -154,8 +152,6 @@
     <ClInclude Include="Unhingen\2D\2D.h" />
     <ClInclude Include="Unhingen\3D\3D.h" />
     <ClInclude Include="Unhingen\Common\Types.h" />
-    <ClInclude Include="Unhingen\Common\Vector\Vec2.h" />
-    <ClInclude Include="Unhingen\Common\Vector\Vec2f.h" />
     <ClInclude Include="Unhingen\Display\Display.h" />
     <ClInclude Include="Unhingen\System\CommandLine.h" />
     <ClInclude Include="Unhingen\Utils\Utils.h" />

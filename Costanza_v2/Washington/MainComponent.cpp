@@ -4,7 +4,6 @@
 #include <SDL2\SDL.h>
 
 #include "..\Unhingen\Common\Types.h"
-#include "..\Unhingen\Common\Vector\Vec2.h"
 #include "..\Unhingen\System\CommandLine.h"
 
 const u_short WINDOW_WIDTH = 800;
@@ -18,18 +17,8 @@ s_int main ( s_int argc, char *argv[] ) {
 	CommandLine *com = new CommandLine( ( u_byte ) argc, ( const char** ) argv );
 	com->PrintTokens();
 
-	Vec2 v1( 10, 10 );
-	Vec2 v2( 20 );
-
 	SDL_Window *window = null;
 	SDL_Surface *surface = null;
-
-	//printf( "v.x = %d\nv.y = %d\n", v1.x, v1.y );
-
-	//Vec2 v = v1 / v2;
-	v1 += v2;
-
-	//printf( "v1 += v2\nv1.x = %d\nv1.y = %d\n", v1.x, v1.y );
 
 	if ( SDL_Init( SDL_INIT_VIDEO ) < 0 ) {
 		printf( "SDL did not initialize! SDL Error: %s\n", SDL_GetError() );

@@ -18,24 +18,12 @@
     <ClCompile Include="Washington\MainComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Unhingen\Common\Vector\Vec2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Unhingen\Common\Vector\Vec2f.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Unhingen\System\CommandLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Unhingen\Common\Types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Unhingen\Common\Vector\Vec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Unhingen\Common\Vector\Vec2f.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Unhingen\System\CommandLine.h">
